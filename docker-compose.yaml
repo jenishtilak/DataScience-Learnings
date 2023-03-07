@@ -1,0 +1,13 @@
+version: '3'
+services:
+  fastapi_service:
+    container_name: fastapi_container_f
+    image: hello-fastapi-app:v3.0
+    ports:
+      - "8000:8000"
+
+  flask_service:
+    container_name: flask_container_f
+    image: hello-flask-app:v3.0
+    ports:
+      - "5000:5000"
